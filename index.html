@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    
+    <main>
+        <header>
+            <h1>Desafios em JavaScript!</h1>
+            <img src="images/javascriptimage.jpg" alt="JavaScript Image" width="700px">
+        </header>
+    
+        <section>
+            <h2>Desafio 01</h2>
+            <p>Uma quadra de tênis tem o formato de um retângulo, cujos lados medem 36 pés por 78 pés, que correspondem a um retângulo de 432 polegadas por 936 polegadas. No último Grand Slam da Austrália, Rafael Nadal perdeu para Novak Djoković, num dos jogos mais bonitos de tênis dos últimos tempos. Muitas vezes, uma jogada é tão rápida, e a bola tão próxima da borda da quadra, que o juiz pode tomar uma decisão que pode ser contestada por um dos jogadores. Para isso, existe o tira-teima, que utiliza a imagem gravada do jogo para decidir se a bola estava dentro ou fora da metade da quadra correspondente a um dos jogadores. Considere que a semi-quadra de Rafael Nadal corresponde a um retângulo em que dois vértices têm coordenadas (0,0) e (432, 468), onde todos os números são em polegadas. Você deve escrever um programa para, dadas as coordenadas (X, Y) do ponto de contato da bola com o solo, determinar se uma bola bateu no solo dentro ou fora da semi-quadra. Note que se a bola bate na linha divisória ela é considerada uma bola dentro.</p>
+            <br>
+            <div>
+                <input type="text" placeholder="Digite o X e Y" id="teima_input">
+                <button onclick="tirateima()">Tira Teima</button>
+                <p id="teima"></p>
+            </div>
+        </section>
+    
+        <section>
+            <h2>Desafio 02</h2>
+            <p>A OBI (Organização de Bocha Internacional) é responsável por organizar a competição mundial de bocha. Infelizmente esse esporte não é muito popular, e numa tentativa de aumentar a sua popularidade, ficou decidido que seriam chamados, para a Grande Final Mundial, o campeão e o vice-campeão de cada sede nacional, ao invés de apenas o primeiro lugar.
+                Tumbólia é um país pequeno que já havia realizado a sua competição nacional quando a nova regra foi instituída, e o comitê local não armazenou quem foi o segundo classificado. Felizmente eles armazenaram a pontuação de todos competidores - que foram apenas três, devido ao tamanho diminuto do país. Sabe-se também que as pontuações de todos jogadores foram diferentes, de forma que não ocorreu empate entre nenhum deles.
+                Resta agora descobrir quem foi o vice-campeão e para isso o comitê precisa de ajuda.</p>
+                <br>
+            <div>
+                <input type="text" id="vice_input" placeholder="Digite os três números">
+                <button onclick="vicelider()">Verificar Vice Lider</button>
+                <p id="vice"></p>
+            </div>   
+        </section>
+    
+        <section>
+            <h2>Desafio 03</h2>
+            <p>Zerinho ou Um (em algumas regiões também conhecido como Dois ou Um Todos devem conhecer o jogo ), utilizado para determinar um ganhador entre três ou mais jogadores. Para quem não conhece, o jogo funciona da seguinte maneira. Cada jogador escolhe um valor entre zero ou um; a um comando (geralmente um dos competidores anuncia em voz alta "Zerinho ou... Um!"), todos os participantes mostram o valor escolhido, utilizando uma das mãos: se o valor escolhido foi um, o competidor mostra o dedo indicador estendido; se o valor escolhido foi zero, mostra a mão com todos os dedos fechados. O ganhador é aquele que tiver escolhido um valor diferente de todos os outros; se não há um jogador com valor diferente de todos os outros (por exemplo todos os jogadores escolhem zero, ou um grupo de jogadores escolhe zero e outro grupo escolhe um), não há ganhador. Alice, Beto e Clara são grandes amigos e jogam Zerinho a toda hora: para determinar quem vai comprar a pipoca durante a sessão de cinema, quem vai entrar na piscina primeiro, etc. Jogam tanto que resolveram fazem um plugin no Facebook para jogar Zerinho. Como não sabem programar, dividiram as tarefas entre amigos que sabem, inclusive você.
+                Dados os três valores escolhidos por Alice, Beto e Clara, cada valor zero ou um, escreva um programa que determina se há um ganhador, e nesse caso determina quem é o ganhador.</p><br>
+            <div>
+                <input type="text" id="zero_input" placeholder="Digite 0 ou 1">
+                <button onclick="zerinho()">Zerinho ou Um</button>
+                <p id="zero"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Membros do grupo!</h2>
+        <div class="div">
+            <figure>
+                <img src="images/membros/macedo.jfif">
+                <figcaption>Macedo</figcaption>
+            </figure>   
+            <figure>
+                <img src="images/membros/snipermonkey.jpg">
+                <figcaption>SniperMonkey</figcaption>
+            </figure>
+            <figure>
+                <img src="images/membros/spola157.webp">
+                <figcaption>Spola157</figcaption>
+            </figure>
+            <figure>
+                <img src="images/membros/timexp.jpg">
+                <figcaption>timexP</figcaption>
+            </figure>
+        </div>
+    </footer>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
